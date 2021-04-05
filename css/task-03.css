@@ -4,15 +4,17 @@ body {
   background-color: #fff;
   color: #424242;
   line-height: 1.5;
+  margin: 8px;
 }
 
 .gallery {
+  margin: -8px;
   padding: 0;
   list-style: none;
 }
 
 .gallery__item {
-  margin: 10px;
+  margin: 8px;
 }
 
 .gallery__img {
@@ -29,12 +31,12 @@ body {
   }
 
   .gallery__item {
-    flex-basis: calc((100% - 2 * 20px) / 2);
+    flex-basis: calc((100% - 2 * 16px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery__item {
-    flex-basis: calc((100% - 3 * 20px) / 3);
+    flex-basis: calc((100% - 3 * 16px) / 3);
   }
 }
