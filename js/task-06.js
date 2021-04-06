@@ -6,7 +6,15 @@ inputRef.addEventListener('change', validationInputValue);
 function validationInputValue(e) {
   const inputDanaLength = e.currentTarget.value.length;
 
-  inputDanaLength === validDataLength
-    ? inputRef.classList = 'valid'
-    : inputRef.classList = 'invalid'
+  if (inputDanaLength === validDataLength) {
+    inputRef.classList = 'valid';
+  }
+
+  if (inputDanaLength !== validDataLength) {
+    inputRef.classList = 'invalid';
+  }
+
+  if (!inputDanaLength) {
+    inputRef.classList = '';
+  }
 };
